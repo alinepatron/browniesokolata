@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Site title and Favicon-->
+    <title>Brownies Sokoláta/Contactanos</title>
+    <link rel="icon" type="image/png" href="LogosSinFondo.png" size="96 * 96" />
+    <link href="./assets/favicon.ico" rel="icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="BS.css">
+
+    <!-- para el estilo de las letras -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Script  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="BS.js"></script> 
+
+</head>
+<body> 
+    <!-- Navbar -->
+    <header>
+      <section class="navbarra">
+        <nav>
+          <ul>
+            <li><img src="Logo.png"  height="40vh" style="margin-top: 4vh; margin-left: 10vh;"></li>
+            <li id="enc"><a href="BrowniesSokolata.html">Brownies Sokoláta</a></li>
+            <li><a href="Contactame.html" style="margin-left: 30vw; margin-top:1.5vh; font-size: larger;">Contactános</a></li>
+            <li><a href="Menu.html" style="margin-top:1.5vh; font-size: larger;">Menú</a></li>
+          </ul>
+        </nav>
+        </section>
+    </header>
+
+    <!-- Contenido -->
+    <section class="contenido">
+        <h4 style="margin-left:14.5vw; font-family:'Work Sans', sans-serif; font-weight: bold;">¡No olvides mandarnos mensaje!</h4> 
+        
+        <!-- cuadros de texto -->
+        <div style="margin-top:5vh; font-family:'Work Sans', sans-serif;" class="centrar" id="letracajas">
+            <textarea id="1" name="Email" rows="1.5" cols="80" style="margin-bottom: 2vh; color:rgb(196, 195, 195);" onclick="if(this.value=='Email') this.value=''" onblur="if(this.value=='') this.value='Email'">Email</textarea>
+            <textarea id="2" name="Asunto" rows="2" cols="80" style="margin-bottom: 2vh; color:rgb(196, 195, 195);" onclick="if(this.value=='Asunto') this.value=''" onblur="if(this.value=='') this.value='Asunto'">Asunto</textarea>
+            <textarea id="3" name="mensaje" rows="10" cols="80" style="margin-bottom: 2vh; color:rgb(196, 195, 195);" onclick="if(this.value=='Ingrese su mensaje') this.value=''" onblur="if(this.value=='') this.value='Ingrese su mensaje'">Ingrese su mensaje</textarea>
+            
+            <!-- boton -->
+            <form method="POST">
+              <button id="b" type="button" class="btn btn-outline-dark" onclick="alerta()"> Enviar</button>
+            </form>
+        
+
+        </div>
+        <div class="separar"></div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+      <div style="justify-content: flex-end; margin-top: .5vh; margin-right: 2vw;">
+        <ul class="list-unstyled">
+          <li>
+            <span class="fa-icon">
+              <img src="Iconos/call_black_24dp.svg">
+            </span>
+            + 52 449 148 5967
+          </li>
+          <li>
+            <span class="fa-icon">
+              <a href="https://www.instagram.com/brownies.sokolata/" style="text-decoration: none" class="fa-icon">
+                <img src="Iconos/logo-instagram.svg" width="23vw">
+              </a>
+            </span>
+            brownies.sokolata
+          </li>
+          <li>
+            <span class="fa-icon">
+              <img src="Iconos/place_black_24dp.svg">
+            </span>
+            Aguascalientes, Ags. México
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- links de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</body>
+</html>
