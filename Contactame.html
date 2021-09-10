@@ -47,14 +47,16 @@
         
         <!-- cuadros de texto -->
         <div style="margin-top:5vh; font-family:'Work Sans', sans-serif;" class="centrar" id="letracajas">
-            <textarea id="1" name="Email" rows="1.5" cols="80" style="margin-bottom: 2vh; color:rgb(196, 195, 195);" onclick="if(this.value=='Email') this.value=''" onblur="if(this.value=='') this.value='Email'">Email</textarea>
-            <textarea id="2" name="Asunto" rows="2" cols="80" style="margin-bottom: 2vh; color:rgb(196, 195, 195);" onclick="if(this.value=='Asunto') this.value=''" onblur="if(this.value=='') this.value='Asunto'">Asunto</textarea>
-            <textarea id="3" name="mensaje" rows="10" cols="80" style="margin-bottom: 2vh; color:rgb(196, 195, 195);" onclick="if(this.value=='Ingrese su mensaje') this.value=''" onblur="if(this.value=='') this.value='Ingrese su mensaje'">Ingrese su mensaje</textarea>
+            <textarea id="1" name="Asunto" rows="2" cols="80" style="margin-bottom: 2vh; color:rgb(85, 85, 85);" onclick="if(this.value=='Asunto') this.value=''" onblur="if(this.value=='') this.value='Asunto'">Asunto</textarea>
+            <textarea id="2" name="mensaje" rows="10" cols="80" style="margin-bottom: 2vh; color:rgb(85, 85, 85);" onclick="if(this.value=='Ingrese su mensaje') this.value=''" onblur="if(this.value=='') this.value='Ingrese su mensaje'">Ingrese su mensaje</textarea>
             
-            <!-- boton -->
-            <form method="POST">
-              <button id="b" type="button" class="btn btn-outline-dark" onclick="alerta()"> Enviar</button>
-            </form>
+        <!-- boton -->
+        <a id="3" href="#" onclick="email(); alerta()" style="text-decoration: none; color:black">
+          <div id="enviar" class="centrar">
+             Enviar
+          </div>
+        </a>
+        
         
 
         </div>
